@@ -1,1 +1,1 @@
-# Ambiente docker start GO
+# Ambiente docker para dev GO
