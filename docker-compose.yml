@@ -5,11 +5,11 @@ services:
     container_name: app
     restart: always
     build:
-      context: .
+      context: ./_docker
       dockerfile: Dockerfile
     volumes:
-      - .:/app
-      - .zshrc:/home/dev/.zshrc
+      - ./app:/app
+      - ./_docker/zshrc:/home/dev/.zshrc
     ports:
       - "8888:8888"
     networks:
