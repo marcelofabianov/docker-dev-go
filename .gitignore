@@ -51,4 +51,8 @@ Desktop.ini
 
 # IDE
 .idea
-.vscode
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
