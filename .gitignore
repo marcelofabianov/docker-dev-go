@@ -1,0 +1,54 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.exe
+*.out
+*.app
+
+/bin
+/pkg
+/vendor
+
+/.cache
+/.terraform
+
+
+*.code-workspace
+*.iml
+
+/go.sum
+/go.mod
+/Gopkg.lock
+/Gopkg.toml
+
+*.log
+*.log.*
+*.tmp
+
+.DS_Store
+thumbs.db
+
+bin/
+*.dll
+*.exe
+*.p1
+*.p2
+*.p3
+*.json
+*.pxf
+*.pem
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*.swp
+
+# IDE
+.idea
+.vscode
