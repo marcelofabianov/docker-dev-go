@@ -17,11 +17,11 @@ RUN apt-get update -yqq && \
   zsh
 
 RUN groupadd -g 1000 dev && \
-    useradd -m -u 1000 -g dev -s $(which zsh) dev
+  useradd -m -u 1000 -g dev -s $(which zsh) dev
 
-WORKDIR /app
+WORKDIR /workspace
 
-COPY . /app
+COPY . /workspace
 
 USER dev:dev
 

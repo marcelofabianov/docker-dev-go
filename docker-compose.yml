@@ -5,15 +5,16 @@ services:
     container_name: app
     image: marcelofabianov/golang
     restart: always
-    working_dir: /app
+    working_dir: /workspace
     build:
       context: ./_docker
       dockerfile: Dockerfile
     volumes:
-      - .:/app
+      - ./workspace:/workspace
       - ./_docker/.zshrc:/home/dev/.zshrc
+      - ./_docker/.zsh_history:/home/dev/.zsh_history
     ports:
-      - "8888:8888"
+      - "8080:8080"
     networks:
       - go_network
 
